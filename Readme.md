@@ -41,3 +41,4 @@ j'ai pu voir quels étaient les lignes de code non testées et les ajoutés dans
 ![coverage](img/coverage.png)
 
 # GAS REPORT
+![gasReport](img/gasreport.png)
