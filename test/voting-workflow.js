@@ -48,8 +48,8 @@ contract("VotingContract - classic workflow", (accounts) => {
   it("Basic worklow normal", async () => {
     /*    
     Worklow "classique" : on ajoute 2 votants : bob et claire, bob ajoute 2 propositions et claire 1
-    bob et claire votent pour la prop 2 
-    La proposition 2 gagne avec 2 votes
+    bob et claire votent pour la prop 3 
+    La proposition 3 gagne avec 2 votes
     */
 
     await contractInstance.addVoter(bob);
@@ -125,8 +125,8 @@ contract("VotingContract - classic workflow", (accounts) => {
   it("Basic worklow - egality", async () => {
     /*    
     Worklow "classique" : on ajoute 2 votants : bob et claire, bob ajoute 2 propositions et claire 1
-    bob votent pour la proposition 2 et claire pour la 23
-    il y a égalité mais la proposition 1 est la plus ancienne donc elle gagne
+    bob vote pour la proposition 2 et claire pour la 3
+    il y a égalité mais la proposition 2 est la plus ancienne donc elle gagne
     */
 
     await contractInstance.addVoter(bob);
